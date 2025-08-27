@@ -64,7 +64,7 @@ const Sign_Up = () => {
 
           <div className="Password">
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               placeholder="Password"
               value={inputLogin.password}
               onChange={(e) =>
@@ -87,7 +87,7 @@ const Sign_Up = () => {
 
           <div className="Password">
             <input
-              type={showPassword ? "text" : "password"}
+              type={showCPassword ? "text" : "password"}
               placeholder="Confirm Password"
               value={inputLogin.confirmPassword}
               onChange={(e) =>
@@ -105,7 +105,7 @@ const Sign_Up = () => {
             ) : (
               <FaRegEyeSlash
                 className="icon"
-                onClick={() => setShowPassword(!showCPassword)}
+                onClick={() => setShowCPassword(!showCPassword)}
               />
             )}
           </div>

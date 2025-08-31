@@ -17,7 +17,14 @@ const Sign_Up = () => {
 
   function handleSUbmit(e) {
     e.preventDefault();
-
+    setInputLogin({
+      firstName: "",
+      lastName: "",
+      email: "",
+      username: "",
+      password: "",
+      confirmPassword: "",
+    });
     console.log(inputLogin);
   }
   return (
